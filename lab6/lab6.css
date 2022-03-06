@@ -1,0 +1,84 @@
+span{
+    align-items: center;
+    font-size: 150%;
+}
+span{
+    font-size: 50%;
+}
+.header{
+    font-size: 250%;
+    text-align: center;
+    background-color: white;
+    width: 90%;
+}
+img{
+    width: 10%;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+    text-align: left;
+}
+
+body{
+    color: #43621a;
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+    /*Photo by <a href="https://unsplash.com/@anastasiiachepinska?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anastasiia Chepinska</a> on <a href="https://unsplash.com/s/photos/coffee-beans?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+    background-image: url("photos/beans.jpg");
+    background-size: cover;
+}
+
+p{
+    font-size: 200%;
+    font-weight: bolder;
+    padding-top: 3%;
+}
+
+.buttons{
+    padding-bottom: 3%;
+}
+
+input.button1{
+    background-color: #20481c;
+    font-size: 100%;
+    color: #53a14b;
+    font-weight: bolder;
+    border: 2px solid #53a14b;
+}
+input.button2{
+    background-color: #560909;
+    font-size: 100%;
+    color: #cb092a;
+    font-weight: bolder;
+    border: 2px solid #cb092a;
+}
+
+div{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order{
+    width: 20%;
+    text-align: left;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+h2{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 1.5px 1.5px rgba(155, 104, 37, 0.5);
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Western Valley Farms</title>
+    <link rel="stylesheet" type="text/css" href=lab6.css>
+    <script type="text/javascript" src="lab6.js"></script>
+</head>
+<body>
+
+
+<form id="form" name="form">
+
+
+    <div class="header">
+        <span id="date"></span>
+        <br>
+        <img src="photos/coffee.png" alt="logo">
+        <h1>Café Europa</h1>
+    </div>
+
+
+
+<div>
+
+
+    <p class="title">Registration:</p>
+    <table>
+
+        <tr>
+            <td>Name</td>
+            <td><label for="name"></label><input type="text" maxlength="25" name="name"  size="30" id="name"  pattern="^[A-Za-z -]+${25}" placeholder="Enter Name" required></td>
+        </tr>
+
+        <tr>
+            <td>Telephone Number</td>
+            <td>
+                <label>
+                    <input type="tel" maxlength="30" size="30" name="number" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="999-999-9999" required>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Set pick-up time?</td>
+            <td>
+                <button onclick="myFunction()" value="yes" id="button">no</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="datetime-local" name="dateselector" id="dateselector" class="dateselector" required></td>
+        </tr>
+    </table>
+
+
+    <p class="title">Order:</p>
+
+
+
+
+
+    <table>
+        <tr><td colspan="3" class="title">Neapolitan Style Pizza:</td></tr>
+        <tr>
+            <td>Margherita</td>
+            <td>$12.00</td>
+            <td><label for="vege1"></label><input type="number" value="0" name="vege1" id="vege1"></td>
+        </tr>
+        <tr>
+            <td>Quattro Formaggi</td>
+            <td>$12.50</td>
+            <td><label for="fruit1"></label><input type="number" value="0"  name="fruit1" id="fruit1"></td>
+        </tr>
+        <tr>
+            <td>Capricciosa</td>
+            <td>$13.00</td>
+            <td><label for="chick1"></label><input type="number" value="0"  name="chick1" id="chick1"></td>
+        </tr>
+        <tr><td colspan="3" class="title">Sandwich Choices:</td></tr>
+        <tr>
+            <td>Schnitzel</td>
+            <td>$8.50</td>
+            <td><label for="vege2"></label><input type="number" value="0"  name="vege2" id="vege2"></td>
+        </tr>
+        <tr>
+            <td>Mixed Grill</td>
+            <td>$9.50</td>
+            <td><label for="fruit2"></label><input type="number" value="0"  name="fruit2" id="fruit2"></td>
+        </tr>
+        <tr>
+            <td>Big Beef on a Bun </td>
+            <td>$10.00</td>
+            <td><label for="chick2"></label><input type="number" value="0" name="chick2" id="chick2"></td>
+        </tr>
+        <tr><td colspan="3" class="title">Beverages:</td></tr>
+        <tr>
+            <td>Coffee</td>
+            <td>$2.00</td>
+            <td><label for="vege3"></label><input type="number" value="0"  name="vege3" id="vege3"></td>
+        </tr>
+        <tr>
+            <td>Late</td>
+            <td>$2.50</td>
+            <td><label for="fruit3"></label><input type="number" value="0" name="fruit3" id="fruit3"></td>
+        </tr>
+        <tr>
+            <td>Sody pop</td>
+            <td>$1.75</td>
+            <td><label for="chick3"></label><input type="number" value="0" name="chick3" id="chick3"></td>
+        </tr>
+    </table>
+    <br>
+
+
+    <p class="buttons">
+        <input class="button1" type="button" value="Submit" onclick="orderdet()">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="button2" type="reset" value="Reset the form">
+    </p>
+
+
+</div>
+
+
+</form>
+
+<br>
+
+
+<div class="order">
+<h2>Your Order Details</h2><p><span id="orderDetail"></span></p>
+</div>
+
+
+</body>
+</html>
